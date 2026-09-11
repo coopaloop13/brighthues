@@ -3,9 +3,86 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bright Hues Face Painting</title>
+<title>Bright Hues Face Painting | Emrie Cooper</title>
+<meta name="description" content="Bright Hues Face Painting by Emrie Cooper. Birthday parties and any event. Call or text (435) 357-1166 to book.">
+<meta name="theme-color" content="#FF6B1C">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>Bright Hues Face Painting</h1>
+
+<header class="card">
+  <div class="card-left">
+    <svg class="rainbow" viewBox="0 0 300 175" role="img" aria-label="Watercolor rainbow with clouds">
+      <g fill="none" stroke-linecap="round" stroke-width="22" opacity="0.9">
+        <path d="M20 150 A130 130 0 0 1 280 150" stroke="#F28B82"/>
+        <path d="M42 150 A108 108 0 0 1 258 150" stroke="#F9B36A"/>
+        <path d="M64 150 A86 86 0 0 1 236 150" stroke="#F6E27A"/>
+        <path d="M86 150 A64 64 0 0 1 214 150" stroke="#A8D8A0"/>
+        <path d="M108 150 A42 42 0 0 1 192 150" stroke="#8FC1E3"/>
+        <path d="M130 150 A20 20 0 0 1 170 150" stroke="#B9A6E0"/>
+      </g>
+      <g class="cloud" opacity="0.95">
+        <ellipse cx="38" cy="150" rx="34" ry="18" fill="#E9E4F5"/>
+        <ellipse cx="22" cy="140" rx="18" ry="16" fill="#D9DEF3"/>
+        <ellipse cx="50" cy="136" rx="20" ry="18" fill="#F3D9E6"/>
+        <ellipse cx="262" cy="150" rx="34" ry="18" fill="#E9E4F5"/>
+        <ellipse cx="278" cy="140" rx="18" ry="16" fill="#D9DEF3"/>
+        <ellipse cx="250" cy="136" rx="20" ry="18" fill="#F3D9E6"/>
+      </g>
+    </svg>
+    <p class="wordmark">Bright Hues</p>
+    <p class="wordmark-sub">Face Painting</p>
+  </div>
+  <div class="card-right">
+    <h1 class="name">Emrie Cooper</h1>
+    <p class="tagline">Birthday parties<br>Any event<br>Call to hire now!</p>
+    <div class="cta">
+      <a class="btn" href="tel:+14353571166">Call or text (435) 357-1166</a>
+      <a class="btn btn-outline" href="mailto:brighthuesfacepaint@gmail.com">Email Emrie</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="gallery" aria-labelledby="gallery-heading">
+    <h2 id="gallery-heading">Recent faces</h2>
+    <div class="carousel">
+      <button class="carousel-prev" type="button" aria-label="Previous photo">&#8249;</button>
+      <ul class="carousel-track" aria-live="polite"></ul>
+      <button class="carousel-next" type="button" aria-label="Next photo">&#8250;</button>
+    </div>
+    <div class="carousel-dots" role="tablist" aria-label="Choose photo"></div>
+  </section>
+
+  <section class="about" aria-labelledby="about-heading">
+    <img class="portrait" src="images/emrie.jpg" alt="Emrie Cooper" onerror="this.remove()">
+    <div>
+      <h2 id="about-heading">Hi, I'm Emrie!</h2>
+      <p>I love turning kids into tigers, butterflies, superheroes, and whatever else they can dream up. I bring my own table, supplies, and a big smile, so all you need to do is enjoy the party.</p>
+      <p class="edit-note">(Replace this paragraph with Emrie's own words.)</p>
+    </div>
+  </section>
+
+  <section class="expect" aria-labelledby="expect-heading">
+    <h2 id="expect-heading">What to expect</h2>
+    <ul class="expect-grid">
+      <li><span class="expect-icon" style="--tile:#F28B82">&#127874;</span><h3>Any event</h3><p>Birthday parties, school and church events, festivals, neighborhood get-togethers.</p></li>
+      <li><span class="expect-icon" style="--tile:#A8D8A0">&#10024;</span><h3>Skin-safe paints</h3><p>Professional water-based face paints that wash off with soap and water.</p></li>
+      <li><span class="expect-icon" style="--tile:#8FC1E3">&#9201;</span><h3>Quick and fun</h3><p>Most designs take about five minutes per face, so everyone gets a turn.</p></li>
+      <li><span class="expect-icon" style="--tile:#B9A6E0">&#128205;</span><h3>Local</h3><p>Serving Utah County and nearby. Ask about travel for other areas.</p></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="contact">
+  <p class="footer-name">Bright Hues Face Painting</p>
+  <p><a href="tel:+14353571166">(435) 357-1166</a></p>
+  <p><a href="mailto:brighthuesfacepaint@gmail.com">brighthuesfacepaint@gmail.com</a></p>
+</footer>
+
+<script type="module" src="gallery.js"></script>
 </body>
 </html>
