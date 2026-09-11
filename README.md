@@ -50,7 +50,7 @@ Then every time:
 ```bash
 npm run deploy
 ```
-Wrangler prints the live URL (something like `https://brighthues.<account>.workers.dev`). To attach a real domain later, open the Worker in the Cloudflare dashboard, go to Settings, then Domains & Routes.
+The site is live at https://brighthues.site (and www.brighthues.site), plus the fallback https://brighthues.joshuarcooper.workers.dev. The custom domains are configured in `wrangler.jsonc` under `routes`, so a deploy keeps them attached.
 
 ## Tests
 
