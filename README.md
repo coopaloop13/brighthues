@@ -46,7 +46,7 @@ Then every time:
 ```bash
 npm run deploy
 ```
-The site is live at https://brighthues.site (and www.brighthues.site), plus the fallback https://brighthues.joshuarcooper.workers.dev. The custom domains are configured in `wrangler.jsonc` under `routes`, so a deploy keeps them attached.
+The site is live at https://brighthues.site (and www.brighthues.site). The custom domains are configured in `wrangler.jsonc` under `routes`, so a deploy keeps them attached. The workers.dev address is switched off once custom domains exist.
 
 ## Tests
 
