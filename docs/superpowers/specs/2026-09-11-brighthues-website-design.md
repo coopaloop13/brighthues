@@ -10,7 +10,7 @@ A single-page "website business card" for Emrie Cooper's face painting business,
 ## Constraints
 
 - Hosted on Cloudflare, deployed with Wrangler as a static-assets Worker, on a free `workers.dev` subdomain for now. A custom domain can be attached later in the dashboard.
-- No backend. Contact is tap-to-call, tap-to-text, and mailto links only.
+- No backend. Contact is a mailto link only. The phone number on the card is Emrie's personal number and is deliberately left off the public site (decided 2026-09-11).
 - No build step and no framework. Plain HTML, CSS, and a small amount of vanilla JS so anyone can edit the text in any editor.
 - Photos are managed by dropping files in a folder and listing them in a JSON file, then redeploying.
 - Mirrors the business card's colors and layout.

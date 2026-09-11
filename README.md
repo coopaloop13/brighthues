@@ -31,7 +31,7 @@ Save it as `public/images/emrie.jpg`. It appears automatically in the About sect
 
 ## Edit the text
 
-Everything is in `public/index.html`. Search for the paragraph you want to change and edit it. Phone and email appear in the hero buttons and the footer; search for `357-1166` and `brighthuesfacepaint` to find them all.
+Everything is in `public/index.html`. Search for the paragraph you want to change and edit it. The email address appears in the hero button, the footer, and the page description; search for `brighthuesfacepaint` to find them all. The phone number is deliberately left off the site.
 
 ## Deploy to Cloudflare
 
