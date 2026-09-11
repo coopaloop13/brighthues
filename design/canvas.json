@@ -1,39 +1,15 @@
 {
+  "pages": [
+    { "id": "page-1", "name": "Chosen: Bubbly Scrapbook" },
+    { "id": "page-2", "name": "Not chosen: Bright Poster" }
+  ],
   "artboards": [
-    {
-      "file": "Main.dc.html",
-      "title": "A. Bubbly Scrapbook",
-      "x": 0,
-      "y": 0,
-      "w": 1100,
-      "h": 2200
-    },
-    {
-      "file": "BrightPoster.dc.html",
-      "title": "B. Bright Poster",
-      "x": 1200,
-      "y": 0,
-      "w": 1100,
-      "h": 2500
-    }
+    { "file": "Main.dc.html", "title": "Bubbly Scrapbook", "x": 0, "y": 0, "w": 1100, "h": 2200, "page": "page-1" },
+    { "file": "BrightPoster.dc.html", "title": "Bright Poster", "x": 0, "y": 0, "w": 1100, "h": 2500, "page": "page-2" }
   ],
   "annotations": [
-    {
-      "id": "note-a",
-      "x": 0,
-      "y": -170,
-      "w": 520,
-      "text": "A. Bubbly Scrapbook\nWhy: feels handmade and personal, like Emrie's own craft project. Tilted polaroids, washi tape, sticker badges, handwritten captions.\nTradeoff: busier; needs real photos to sing, and the tilts take care on phones."
-    },
-    {
-      "id": "note-b",
-      "x": 1200,
-      "y": -170,
-      "w": 520,
-      "text": "B. Bright Poster\nWhy: loud, confident, big type and flat color blocks, like a party flyer. Reads instantly on a phone.\nTradeoff: less 'made by a kid', more 'brand'. Relies on bold copy staying short."
-    }
+    { "id": "note-a", "x": 0, "y": -150, "w": 520, "page": "page-1", "text": "Chosen direction, now live at brighthues.site. Handmade and personal: tilted polaroids, washi tape, sticker badges, handwritten captions." },
+    { "id": "note-b", "x": 0, "y": -150, "w": 520, "page": "page-2", "text": "Not chosen. Kept for reference: loud poster type and flat color blocks." }
   ],
-  "launch": {
-    "view": "canvas"
-  }
+  "launch": { "view": "canvas", "page": "page-1" }
 }
