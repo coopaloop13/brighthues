@@ -38,7 +38,7 @@ Single `index.html`, sections in order:
 1. **Hero (the card).** Two-panel layout like the physical card: cream left panel with an inline SVG watercolor-style rainbow with clouds, "BRIGHT HUES" in orange caps, "FACE PAINTING" below. Orange right panel with "EMRIE COOPER", the three-line tagline, and two large buttons: "Call or text" (`tel:+14353571166`) and "Email" (`mailto:brighthuesfacepaint@gmail.com`). On phones the panels stack vertically. Sticky-free; the buttons are simply near the top.
 2. **Gallery.** Heading "Recent faces". A horizontally scrolling carousel with previous/next arrow buttons, native touch swipe via CSS scroll-snap, and dot indicators. Images come from `gallery.json`. When the list is empty, the carousel shows six placeholder tiles in the rainbow colors with a "Photos coming soon" label so the page still looks finished.
 3. **About Emrie.** Short paragraph of placeholder copy marked clearly for replacement, with an optional portrait slot (`images/emrie.jpg`; hidden if the file is absent).
-4. **What to expect.** Four short cards: event types (birthdays, school and church events, festivals, anything), skin-safe water-based paints that wash off with soap and water, roughly how long per face, and service area (placeholder "Utah County and nearby"). Copy is placeholder and easy to edit.
+4. **What to expect.** Four short cards: event types (birthdays, school and church events, festivals, anything), skin-safe water-based paints that wash off with soap and water, roughly how long per face, and service area (placeholder "St. George Area"). Copy is placeholder and easy to edit.
 5. **Footer / contact.** Orange band repeating the phone and email as links, plus the business name.
 
 ## Files
