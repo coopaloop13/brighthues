@@ -8,9 +8,18 @@ test('valid entries become photo slides with alt text', () => {
     { src: 'images/gallery/butterfly.jpg' },
   ]);
   assert.deepEqual(slides, [
-    { kind: 'photo', src: 'images/gallery/tiger.jpg', alt: 'Tiger face' },
-    { kind: 'photo', src: 'images/gallery/butterfly.jpg', alt: '' },
+    { kind: 'photo', src: 'images/gallery/tiger.jpg', alt: 'Tiger face', caption: 'Tiger face' },
+    { kind: 'photo', src: 'images/gallery/butterfly.jpg', alt: '', caption: '' },
   ]);
+});
+
+test('caption is used when given, otherwise falls back to alt', () => {
+  const slides = resolveSlides([
+    { src: 'a.jpg', alt: 'Tiger face paint on a child', caption: 'Luna the tiger' },
+    { src: 'b.jpg', alt: 'Butterfly' },
+  ]);
+  assert.equal(slides[0].caption, 'Luna the tiger');
+  assert.equal(slides[1].caption, 'Butterfly');
 });
 
 test('empty list falls back to six rainbow placeholders', () => {
@@ -27,7 +36,7 @@ test('non-array input (fetch failure) falls back to placeholders', () => {
 
 test('entries without a usable src are dropped', () => {
   const slides = resolveSlides([{ alt: 'no src' }, { src: '   ' }, null, { src: 'ok.jpg' }]);
-  assert.deepEqual(slides, [{ kind: 'photo', src: 'ok.jpg', alt: '' }]);
+  assert.deepEqual(slides, [{ kind: 'photo', src: 'ok.jpg', alt: '', caption: '' }]);
 });
 
 test('placeholder colors are the six brand rainbow hexes', () => {

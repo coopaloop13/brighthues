@@ -1,7 +1,7 @@
 # Bright Hues Face Painting — Website Design
 
 **Date:** 2026-09-11
-**Status:** Approved
+**Status:** Approved. Restyled 2026-09-11 to the "Bubbly Scrapbook" direction (see below).
 
 ## Purpose
 
@@ -89,3 +89,13 @@ brighthues/
 ## Out of scope
 
 Booking form, pricing, Instagram integration, custom domain, analytics.
+
+## Bubbly Scrapbook restyle (2026-09-11)
+
+Chosen from two mockup directions. Structure changes from the original spec:
+
+- Fonts: Fredoka for headings and buttons, Caveat for handwritten captions, Poppins for body.
+- Hero is a single cream panel: confetti, rainbow, wordmark, a tilted dashed "Hi! I'm Emrie, I'm 14" sticker, and one email button. The separate About section is folded into that sticker.
+- Wavy SVG dividers into and out of a full-bleed orange gallery band. Slides render as tilted polaroids with tape and a handwritten caption; `gallery.json` entries gain an optional `caption` (falls back to `alt`).
+- "What to expect" becomes "Pick your look": six rainbow pill chips with inline SVG icons, plus three round fact stickers.
+- Footer has rounded top corners. No phone number anywhere.

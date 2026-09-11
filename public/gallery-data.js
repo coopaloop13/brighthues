@@ -9,10 +9,10 @@ export function resolveSlides(data) {
   if (!Array.isArray(data)) return placeholders();
   const photos = data
     .filter(entry => entry && typeof entry.src === 'string' && entry.src.trim() !== '')
-    .map(entry => ({
-      kind: 'photo',
-      src: entry.src,
-      alt: typeof entry.alt === 'string' ? entry.alt : '',
-    }));
+    .map(entry => {
+      const alt = typeof entry.alt === 'string' ? entry.alt : '';
+      const caption = typeof entry.caption === 'string' && entry.caption.trim() !== '' ? entry.caption : alt;
+      return { kind: 'photo', src: entry.src, alt, caption };
+    });
   return photos.length > 0 ? photos : placeholders();
 }

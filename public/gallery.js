@@ -19,17 +19,24 @@ async function loadGalleryData() {
 function slideElement(slide) {
   const li = document.createElement('li');
   li.className = 'slide';
+  const caption = document.createElement('p');
+  caption.className = 'slide-caption';
   if (slide.kind === 'photo') {
     const img = document.createElement('img');
     img.src = slide.src;
     img.alt = slide.alt;
     img.loading = 'lazy';
-    li.append(img);
+    caption.textContent = slide.caption;
+    li.append(img, caption);
   } else {
     li.classList.add('slide-placeholder');
     li.style.setProperty('--tile', slide.color);
     li.setAttribute('aria-hidden', 'true');
-    li.textContent = 'Photos coming soon';
+    const photo = document.createElement('div');
+    photo.className = 'slide-photo';
+    photo.textContent = 'photo';
+    caption.textContent = 'coming soon';
+    li.append(photo, caption);
   }
   return li;
 }

@@ -16,22 +16,18 @@ Open http://localhost:8787.
 2. Add a line to `public/gallery.json`:
    ```json
    [
-     { "src": "images/gallery/tiger.jpg", "alt": "Tiger face paint" },
-     { "src": "images/gallery/butterfly.jpg", "alt": "Butterfly face paint" }
+     { "src": "images/gallery/tiger.jpg", "alt": "Tiger face paint on a smiling kid", "caption": "Luna the tiger" },
+     { "src": "images/gallery/butterfly.jpg", "alt": "Butterfly face paint", "caption": "Butterfly, age 5" }
    ]
    ```
-   The `alt` text describes the photo for screen readers and search engines.
+   `caption` is the handwritten label under the polaroid. `alt` describes the photo for screen readers and search engines. If you leave out `caption`, the `alt` text is used.
 3. Deploy (below).
 
-If `gallery.json` is empty, the site shows "Photos coming soon" tiles.
-
-## Add a photo of Emrie
-
-Save it as `public/images/emrie.jpg`. It appears automatically in the About section. If the file is missing, the section just shows text.
+If `gallery.json` is empty, the site shows blank "coming soon" polaroids.
 
 ## Edit the text
 
-Everything is in `public/index.html`. Search for the paragraph you want to change and edit it. The email address appears in the hero button, the footer, and the page description; search for `brighthuesfacepaint` to find them all. The phone number is deliberately left off the site.
+Everything is in `public/index.html`: the intro sticker, the look names, the three fact stickers, and the footer. Search for the words you want to change and edit them. The email address appears in the hero button, the footer, and the page description; search for `brighthuesfacepaint` to find them all. The phone number is deliberately left off the site.
 
 ## Deploy to Cloudflare
 
