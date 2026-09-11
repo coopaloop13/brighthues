@@ -77,7 +77,7 @@ brighthues/
 
 - Every image has alt text from `gallery.json`; placeholder tiles are `aria-hidden`.
 - Carousel buttons are real `<button>` elements with labels; the track is keyboard scrollable.
-- Color contrast: cream on orange and orange on cream both checked to meet WCAG AA at heading sizes; body text uses `ink` on cream.
+- Color contrast: cream on brand orange is only 2.4:1, so cream is used on orange solely for the large decorative wordmark and name (brand exception). All other text on orange panels uses `ink` (4.9:1, passes AA). On cream, headings use `orange-dark` (3.1:1, passes AA for large text) and body text uses `ink`. Buttons on orange panels are cream with `ink` text.
 - Single font family, lazy-loaded images, no JS beyond the carousel. Target: loads in well under a second on a phone.
 
 ## Testing
